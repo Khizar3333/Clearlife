@@ -16,7 +16,7 @@
 # production
 /build
 
-orange.mp4
+public/
 # misc
 .DS_Store
 *.pem
