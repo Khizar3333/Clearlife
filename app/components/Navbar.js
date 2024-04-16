@@ -7,17 +7,12 @@ import logo from "../images/clearcompanylogo.jpg"
 import { Fade,Flip } from 'react-awesome-reveal';
 import WhatsAppIcon from "./whatsappicon";
 import Mail from "./Mail";
+
 const Navbar = () => {
     const [navigation, setNavigation] = useState(false)
     const [pageScroll, setPageScroll] = useState(false);
 
-    useEffect(() => {
-      const sub = window.addEventListener("scroll", () =>
-        setPageScroll(window.scrollY >= 90)
-      );
-  
-      return sub;
-    }, []);
+    
 
 
     const links=[
@@ -51,6 +46,15 @@ const Navbar = () => {
     link:<Mail/>,
 },
     ]
+  //   const [playVideo, setPlayVideo] = useState(false);
+
+  // useEffect(() => {
+  //   // Play the video after a user interaction (e.g., click)
+  //   const handleClick = () => setPlayVideo(true);
+  //   window.addEventListener('click', handleClick);
+
+  //   return () => window.removeEventListener('click', handleClick);
+  // }, []);
   return (
     <>
     {/* <div className="bg-gradient-to-r from-[#48c768] to-green-400 flex w-full h-20 z-10 fixed duration-300  transition-all ease-in"  > */}
@@ -126,13 +130,33 @@ const Navbar = () => {
 </div>
 </div>
 </div>
-<div className=" w-full relative top-[112px] -z-[1]">
+<div className=" w-full h-full relative top-[112px] -z-[1]">
 
-<video controls autoPlay loop muted className="w-full h-full object-cover  z-[100]">
-        <source src="/orange1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+<video controls autoPlay className="w-full h-full object-cover  z-[100]">
+
+        
+        <source src="./orange2.mp4" type="video/mp4"/>
       </video>
 </div>
+
+{/* <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+      <iframe
+        src={`https://player.vimeo.com/video/935568157?badge=0&autopause=0&player_id=0&app_id=58479${
+          playVideo ? '&autoplay=1' : ''
+        }`}
+        frameBorder={0}
+        allow="fullscreen; picture-in-picture; clipboard-write"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+        }}
+        title="orange1"
+      />
+    </div> */}
+
 <div className="absolute top-[548px] left-14 text-left z-[1]  text-white">
 <h1 className="heroh1 mb-4 text-3xl font-bold  ">Transforming Wastewater into a Sustainable Future </h1>
 <p className="text-xl mt-2 w-1/2">Our cutting-edge wastewater treatment technologies go beyond just treating wastewater - they reclaim valuable resources and minimize environmental impact</p>
