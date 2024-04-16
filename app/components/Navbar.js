@@ -6,7 +6,7 @@ import Image from "next/image";
 import logo from "../images/clearcompanylogo.jpg"
 import { Fade,Flip } from 'react-awesome-reveal';
 import WhatsAppIcon from "./whatsappicon";
-import Mail from "./mail";
+import Mail from "./Mail";
 const Navbar = () => {
     const [navigation, setNavigation] = useState(false)
     const [pageScroll, setPageScroll] = useState(false);
