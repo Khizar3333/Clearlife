@@ -5,7 +5,7 @@ import img3 from "../images/3.jpg"
 import Image from 'next/image'
 const Experts = () => {
   return (
-    <section className="text-gray-600 body-font expertsfont">
+    <section id="EXPERTS" className="text-gray-600 body-font expertsfont">
     <div className="container px-5 py-24 mx-auto">
 
     <div className="card flex flex-col text-center w-full mb-10">
@@ -22,9 +22,10 @@ const Experts = () => {
     </div>
 
       
-
+{/* shopify 5 video 14,15 */}
+{/* fb 1st 5 video */}
       
-        <div className='grid grid-cols-3 '>
+        <div className='grid grid-cols-1 sm:grid-cols-3 '>
           <div className='flex flex-col justify-center '>
           <div>
   <Image src={img1} className='lg:h-48 md:h-36 h-30 object-contain hover:scale-110 transition duration-200 ease-in hover:mb-3' />
@@ -70,7 +71,6 @@ const Experts = () => {
 
 </div>
       
-    {/* </div> */}
   </section>
   
   )

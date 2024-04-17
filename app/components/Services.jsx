@@ -9,7 +9,7 @@ import aboutpic from "../images/missionimg.png"
 import Image from 'next/image';
 const Services = () => {
   return (
-    <section className="text-gray-600 body-font">
+    <section id="SERVICES" className="text-gray-600 body-font">
 
       <Flip duration={500}>
       <div className='w-1/2 h-full'>
@@ -22,11 +22,7 @@ const Services = () => {
       <div className="p-4 md:w-1/3">
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <Image src={image1} className="lg:h-48 md:h-36 w-full object-cover object-center" alt="blog"/>
-          {/* <img
-            className="lg:h-48 md:h-36 w-full object-cover object-center"
-            src="../images/img1.jpg"
-            alt="blog"
-          /> */}
+          
           <div className="p-6">
             
               <Fade triggerOnce duration={1000}>
