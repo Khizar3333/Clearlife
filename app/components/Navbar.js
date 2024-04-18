@@ -78,7 +78,7 @@ const Navbar = () => {
 </div>
         
         <div className="" >
-            <ul className="hidden md:flex  mt-4 flex-wrap items-center ">
+            <ul className="hidden lg:flex  mt-4 flex-wrap items-center ">
 
 {links.map(({ id, link }) => (
               <Link key={id} href={`/#${link}`}>
@@ -104,7 +104,7 @@ const Navbar = () => {
             {
                 !navigation &&(
                 
-                    <div className="md:hidden cursor-pointer" onClick={()=>setNavigation(true)}>
+                    <div className="lg:hidden cursor-pointer" onClick={()=>setNavigation(true)}>
             <FaBars size={30}/>
             </div>
   )
@@ -171,7 +171,7 @@ const Navbar = () => {
 
 
 
-<div className="absolute top-[450px] left-[53px] flex flex-col w-[71%] md:left-14 md:text-left z-[1]  text-white text-center">
+<div className="absolute top-[440px] left-[53px] flex flex-col w-[71%] md:left-14 md:text-left z-[1]  text-white text-center">
   
 
 <h1 className="heroh1 text-[22px] mb-4 sm:text-3xl font-bold  ">Transforming Wastewater into a Sustainable Future </h1>
@@ -180,6 +180,7 @@ const Navbar = () => {
 
 <button className="py-2 px-6 text-xl mt-6   rounded-md bg-blue-400 text-white cursor-pointer">button</button>
 </div>
+{/* </div> */}
 </div>
             </>
 )
