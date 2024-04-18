@@ -171,14 +171,14 @@ const Navbar = () => {
 
 
 
-<div className="absolute top-[440px] left-[53px] flex flex-col w-[71%] md:left-14 md:text-left z-[1]  text-white text-center">
+<div className="absolute top-[360px] left-[53px] flex flex-col w-[71%] md:left-14 md:text-left z-[1]  text-white text-center">
   
 
 <h1 className="heroh1 text-[22px] mb-4 sm:text-3xl font-bold  ">Transforming Wastewater into a Sustainable Future </h1>
 <p className="text-[15px] md:text-xl w-fit mt-2 sm:w-1/2">Our cutting-edge wastewater treatment technologies go beyond just treating wastewater - they reclaim valuable resources and minimize environmental impact</p>
-<div className="flex justify-center md:justify-start">
+<div className="flex justify-center md:justify-start mt-5">
 
-<button className="py-2 px-6 text-xl mt-6   rounded-md bg-blue-400 text-white cursor-pointer">button</button>
+<button className="py-2 px-6 text-xl    rounded-md bg-blue-400 text-white cursor-pointer">button</button>
 </div>
 {/* </div> */}
 </div>
