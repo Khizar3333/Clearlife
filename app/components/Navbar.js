@@ -1,5 +1,6 @@
 "use client"
 import { useState,useEffect } from "react";
+
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../images/clearcompanylogo.jpg"
@@ -48,14 +49,7 @@ const Navbar = () => {
         id:5,
         link:'CONTACT US',
     },
-//     {
-//       id:6,
-//       link:<WhatsAppIcon/>,
-//   },
-//   {
-//     id:7,
-//     link:<Mail/>,
-// },
+
     ]
     function handleLinkClick(link) {
       const targetSection = document.getElementById(link);
@@ -82,9 +76,7 @@ const Navbar = () => {
 
 {links.map(({ id, link }) => (
               <Link key={id} href={`/#${link}`}>
-                {/* <li  className="ml-10 text-sm font-extrabold uppercase cursor-pointer duration-200 ease-out hover:scale-105 tracking-wider">
-                  {link}
-                </li> */}
+                
                   <li
         className="ml-10 text-sm font-extrabold uppercase cursor-pointer duration-200 ease-out hover:scale-105 tracking-wider"
         onClick={() => handleLinkClick(`${link}`)}
@@ -162,25 +154,27 @@ const Navbar = () => {
 </div>
 <div className=" w-full h-screen relative top-[112px] -z-[1]">
 
+
+
 <video controls autoPlay loop muted className="w-full h-full object-cover  z-[100]">
 
         
-        <source src="./orange3.mp4" type="video/mp4"/>
+        <source src="./orange4.mp4" type="video/mp4"/>
       </video>
+     
 </div>
 
 
 
-<div className="absolute top-[300px] left-[53px] flex flex-col w-[71%] md:left-14 md:text-left z-[1]  text-white text-center">
+<div className="absolute top-[280px] left-[53px] flex flex-col w-[71%] md:left-14 md:text-left z-[1]  text-white text-center">
   
 
 <h1 className="heroh1 text-[22px] mb-4 sm:text-3xl font-bold  ">Transforming Wastewater into a Sustainable Future </h1>
-<p className="text-[15px] md:text-xl w-fit mt-2 sm:w-1/2">Our cutting-edge wastewater treatment technologies go beyond just treating wastewater - they reclaim valuable resources and minimize environmental impact</p>
+<p className="text-[15px] md:text-xl w-fit mt-2 sm:w-1/2 font-medium">Our cutting-edge wastewater treatment technologies go beyond just treating wastewater - they reclaim valuable resources and minimize environmental impact</p>
 <div className="flex justify-center md:justify-start mt-5">
 
 <button className="py-2 px-6 text-xl    rounded-md bg-blue-400 text-white cursor-pointer">button</button>
 </div>
-{/* </div> */}
 </div>
             </>
 )
