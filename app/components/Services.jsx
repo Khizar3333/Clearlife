@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { Fade, Bounce, Flip } from 'react-awesome-reveal';
 import image1 from "../images/img1.jpg"
 import image2 from "../images/img2.jpg"
-import aboutpic from "../images/missionimg.png"
+import image3 from "../images/image3.jpeg"
 
 import Image from 'next/image';
 const Services = () => {
@@ -97,7 +97,7 @@ const Services = () => {
         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
           <Image
             className="lg:h-48 md:h-36 w-full object-cover object-center"
-            src={aboutpic}/>
+            src={image3}/>
           <div className="p-6">
             <Fade triggerOnce duration={1000}>
 

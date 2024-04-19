@@ -67,18 +67,18 @@ const Navbar = () => {
       
       <div className="h-[70px] absolute top-0 flex justify-between items-center w-full  max-w-screen-xl mx-auto p-4">
         
-      <div className="flex justify-center items-center mt-6">
-    <Image src={logo} className="w-[142px] h-[120px] object-contain" />
+      <div className="flex justify-center  mt-12 mr-6 ">
+    <Image src={logo} className="w-[200px] h-[105px]  object-cover " />
 </div>
         
-        <div className="" >
-            <ul className="hidden lg:flex  mt-4 flex-wrap items-center ">
+        <div >
+            <ul className="hidden lg:flex  mt-7 flex-wrap items-center ">
 
 {links.map(({ id, link }) => (
               <Link key={id} href={`/#${link}`}>
                 
                   <li
-        className="ml-10 text-sm font-extrabold uppercase cursor-pointer duration-200 ease-out hover:scale-105 tracking-wider"
+        className="ml-10 text-[16px]  leading-5 font-extrabold uppercase cursor-pointer duration-200 ease-out hover:scale-105 tracking-wider"
         onClick={() => handleLinkClick(`${link}`)}
       >
         {link}
@@ -152,7 +152,7 @@ const Navbar = () => {
 </div>
 </div>
 </div>
-<div className=" w-full h-screen relative top-[112px] -z-[1]">
+<div className=" w-full h-screen relative top-[135px] -z-[1]">
 
 
 
@@ -173,7 +173,7 @@ const Navbar = () => {
 <p className="text-[15px] md:text-xl w-fit mt-2 sm:w-1/2 font-medium">Our cutting-edge wastewater treatment technologies go beyond just treating wastewater - they reclaim valuable resources and minimize environmental impact</p>
 <div className="flex justify-center md:justify-start mt-5">
 
-<button className="py-2 px-6 text-xl    rounded-md bg-blue-400 text-white cursor-pointer">button</button>
+<button className="py-2 px-6 text-xl    rounded-md bg-blue-400 text-white cursor-pointer">More</button>
 </div>
 </div>
             </>

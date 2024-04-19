@@ -2,6 +2,9 @@ import React from 'react'
 import img1 from "../images/1.jpg"
 import img2 from "../images/2.jpg"
 import img3 from "../images/3.jpg"
+import img4 from "../images/4.jpg"
+import img5 from "../images/5.jpg"
+import img6 from "../images/6.jpg"
 import Image from 'next/image'
 const Experts = () => {
   return (
@@ -24,42 +27,40 @@ const Experts = () => {
       
 {/* shopify 5 video 14,15 */}
 {/* fb 1st 5 video */}
-      
-        <div className='grid grid-cols-1 sm:grid-cols-3 '>
-          <div className='flex flex-col justify-center '>
-          <div>
-  <Image src={img1} className='lg:h-48 md:h-36 h-30 object-contain hover:scale-110 transition duration-200 ease-in hover:mb-3' />
-</div>
      
-
-      <div className='text-center text-xl mt-2'>
-
-      <h3 >Dr. Naveen Kumar</h3>
-      <p>UI designer</p>
-      </div>
-          </div>
-          <div className='p-0'>
-    <div>
-
-      <Image src={img2} className='lg:h-48 md:h-36 h-30  object-contain hover:scale-110 transition duration-200 ease-in hover:mb-3'/>
-    </div>
-    <div className='text-center text-xl mt-2'>
-
-      <h3 >Khizar ahmad</h3>
-      <p>developer</p>
-    </div>
-          </div>
-          <div className='p-0'>
-    <div>
-
-      <Image src={img3} className='lg:h-48 md:h-36 h-30 object-contain hover:scale-110 hover:mb-3 transition duration-200 ease-in'/>
-    </div>
-    <div className='text-center text-xl mt-2'>
-
-      <h3 >Usman Asif</h3>
-      <p>developer</p>
-    </div>
-          </div>
+        <div className='grid grid-cols-1 sm:grid-cols-3 sm:mx-64'>
+          
+          <div class="flex flex-col justify-center">
+  <div class="relative group">
+    <Image src={img1} alt="Visible Image" className="lg:h-[238px] md:h-36 h-40 object-contain rounded-lg transition duration-300 ease-in group-hover:opacity-0" />
+    <Image src={img4} alt="Hidden Image" className="lg:h-[238px] md:h-36 h-40 object-contain absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300 ease-in" />
+  </div>
+  <div class="text-center text-xl mt-2 font-semibold">
+    <h3>Amman Khokhar</h3>
+    <p>CEO</p>
+  </div>
+</div>
+<div class="flex flex-col justify-center">
+  <div class="relative group">
+    <Image src={img2} alt="Visible Image" className="lg:h-[238px] md:h-36 h-40 object-contain rounded-lg transition duration-300 ease-in group-hover:opacity-0" />
+    <Image src={img5} alt="Hidden Image" className="lg:h-[238px] md:h-36 h-40 object-contain absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300 ease-in" />
+  </div>
+  <div class="text-center text-xl mt-2 font-semibold">
+    <h3>Fraz Nayyar</h3>
+    <p>CTO</p>
+  </div>
+</div>
+<div class="flex flex-col justify-center">
+  <div class="relative group">
+    <Image src={img3} alt="Visible Image" className="lg:h-[238px] md:h-36 h-40 object-contain rounded-lg transition duration-300 ease-in group-hover:opacity-0" />
+    <Image src={img6} alt="Hidden Image" className=" lg:h-[238px] md:h-36 h-40 object-contain absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300 ease-in" />
+  </div>
+  <div class="text-center text-xl mt-2 font-semibold">
+    <h3>Danial Khokhar</h3>
+    <p>President</p>
+  </div>
+</div>
+          
         
       </div>
       <div className='text-center mt-6 font-sans rounded-md border-2 shadow-md p-4'>

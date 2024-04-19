@@ -50,9 +50,7 @@
    }
    
    .card {
-     /* display: inline-block; */
      position: relative;
-     /* max-width: 300px; */
      max-height: 500px;
      background-color: #bef8c58c;
      border-radius: 10px;
@@ -61,7 +59,6 @@
      text-decoration: none;
      z-index: 0;
      overflow: hidden;
-     /* background: linear-gradient(to bottom, #c3e6ec, #a7d1d9); */
      font-family: Arial, Helvetica, sans-serif;
    }
    
