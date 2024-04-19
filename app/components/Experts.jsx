@@ -25,15 +25,14 @@ const Experts = () => {
     </div>
 
       
-{/* shopify 5 video 14,15 */}
-{/* fb 1st 5 video */}
+
      
-        <div className='grid grid-cols-1 sm:grid-cols-3 sm:mx-64'>
+        <div className='grid grid-cols-1 sm:grid-cols-3 '>
           
           <div class="flex flex-col justify-center">
-  <div class="relative group">
-    <Image src={img1} alt="Visible Image" className="lg:h-[238px] md:h-36 h-40 object-contain rounded-lg transition duration-300 ease-in group-hover:opacity-0" />
-    <Image src={img4} alt="Hidden Image" className="lg:h-[238px] md:h-36 h-40 object-contain absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300 ease-in" />
+  <div class="relative group w-fit">
+    <Image src={img1} alt="Visible Image" className="lg:h-[238px] md:h-36 h-40 object-contain rounded-lg transition duration-400 ease-in-out group-hover:opacity-0" />
+    <Image src={img4} alt="Hidden Image" className="lg:h-[238px] md:h-36 h-40 object-contain absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition duration-400 ease-in-out" />
   </div>
   <div class="text-center text-xl mt-2 font-semibold">
     <h3>Amman Khokhar</h3>
@@ -42,8 +41,8 @@ const Experts = () => {
 </div>
 <div class="flex flex-col justify-center">
   <div class="relative group">
-    <Image src={img2} alt="Visible Image" className="lg:h-[238px] md:h-36 h-40 object-contain rounded-lg transition duration-300 ease-in group-hover:opacity-0" />
-    <Image src={img5} alt="Hidden Image" className="lg:h-[238px] md:h-36 h-40 object-contain absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300 ease-in" />
+    <Image src={img2} alt="Visible Image" className="lg:h-[238px] md:h-36 h-40 object-contain rounded-lg transition duration-300 ease-in-out group-hover:opacity-0" />
+    <Image src={img5} alt="Hidden Image" className="lg:h-[238px] md:h-36 h-40 object-contain absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out" />
   </div>
   <div class="text-center text-xl mt-2 font-semibold">
     <h3>Fraz Nayyar</h3>
@@ -52,8 +51,8 @@ const Experts = () => {
 </div>
 <div class="flex flex-col justify-center">
   <div class="relative group">
-    <Image src={img3} alt="Visible Image" className="lg:h-[238px] md:h-36 h-40 object-contain rounded-lg transition duration-300 ease-in group-hover:opacity-0" />
-    <Image src={img6} alt="Hidden Image" className=" lg:h-[238px] md:h-36 h-40 object-contain absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300 ease-in" />
+    <Image src={img3} alt="Visible Image" className="lg:h-[238px] md:h-36 h-40 object-contain rounded-lg transition duration-300 ease-in-out group-hover:opacity-0" />
+    <Image src={img6} alt="Hidden Image" className=" lg:h-[238px] md:h-36 h-40 object-contain absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out" />
   </div>
   <div class="text-center text-xl mt-2 font-semibold">
     <h3>Danial Khokhar</h3>

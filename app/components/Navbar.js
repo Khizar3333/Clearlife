@@ -1,6 +1,5 @@
 "use client"
 import { useState,useEffect } from "react";
-
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../images/clearcompanylogo.jpg"
@@ -86,9 +85,17 @@ const Navbar = () => {
               </Link>
             ))}
             <div className="flex items-center  ">
-    <FaLinkedin className="text-blue-500 mr-6 ml-16" size={25} />
+              <Link href="https://www.linkedin.com/company/clearlife-technologies"  target="_blank">
+    <FaLinkedin className="text-blue-500 mr-6 ml-16" size={25} 
+    
+    />
+    </Link>
+    <Link href="https://www.youtube.com/channel/UC71yJV-XmwtLBpGfsd0wD7g" target="_blank">
     <FaYoutube className="text-red-600 mr-6" size={25} />
+    </Link>
+    <Link href="https://www.facebook.com/profile.php?id=61558240847008"  target="_blank">
     <FaFacebook className="text-blue-500" size={25} />
+    </Link>
   </div>
   
             </ul>
@@ -135,13 +142,21 @@ const Navbar = () => {
 </ul>
 <div className="grid grid-cols-2 w-4/5 mx-auto gap-10 h-full">
   <div className="flex items-center justify-center cursor-pointer p-2 rounded-full shadow-md shadow-white">
-<FaLinkedin size={25}/>
+  <Link href="https://www.youtube.com/channel/UC71yJV-XmwtLBpGfsd0wD7g"  target="_blank">
+    <FaYoutube className="text-red-600 mr-6" size={25} />
+    </Link>
   </div>
   <div className="flex items-center  justify-center cursor-pointer p-2 rounded-full shadow-md shadow-white">
-<FaYoutube  size={25}/>
+  <Link href="https://www.linkedin.com/company/clearlife-technologies"  target="_blank">
+    <FaLinkedin className="text-blue-500 mr-6 ml-16" size={25} 
+    
+    />
+    </Link>
   </div>
   <div className="flex items-center justify-center cursor-pointer p-2 rounded-full shadow-md shadow-white">
-<FaFacebook size={25}/>
+  <Link href="https://www.facebook.com/profile.php?id=61558240847008"  target="_blank">
+    <FaFacebook className="text-blue-500" size={25} />
+    </Link>
   </div>
   <div className="flex items-center justify-center cursor-pointer p-2 rounded-full shadow-md shadow-white">
 <FaGithub size={25}/>
